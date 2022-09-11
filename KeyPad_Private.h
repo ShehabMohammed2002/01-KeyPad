@@ -1,0 +1,34 @@
+/*
+ *  File : KeyPad_private.h
+ *  DATE: þ9/9/2022
+ *  Author: Shehab aldeen
+ *  Version : V1
+ *  Describtion : --------------
+ */
+
+/*to define KEYPAD_PORT*/
+#define PORTA 0
+#define PORTB 1
+#define PORTB 2
+#define PORTB 3
+
+/*to define HIGH VOLTAGE AND LOW VOLTAGE */
+#define HIGH 1
+#define LOW 0
+
+/**************if KEYPAD_TYPE == KEYPAD_4*4 ******************/
+#if KEYPAD_TYPE == KEYPAD_4*4  //to define the number of rows and columns
+
+#define KEYPAD_NUM_COL 4
+#define KEYPAD_NUM_ROW 4
+
+#endif
+
+
+/**************if KEYPAD_TYPE == KEYPAD_3*3 ******************/
+#if KEYPAD_TYPE == KEYPAD_3*3  //to define the number of rows and columns
+
+#define KEYPAD_NUM_COL 3
+#define KEYPAD_NUM_ROW 3
+
+#endif
